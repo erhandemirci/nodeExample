@@ -1,0 +1,23 @@
+{
+  "name": "youtubenode",
+  "version": "1.0.0",
+  "description": "youtube express app ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erhandemirci/nodeExample.git"
+  },
+  "author": "erhan demirci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erhandemirci/nodeExample/issues"
+  },
+  "homepage": "https://github.com/erhandemirci/nodeExample#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
