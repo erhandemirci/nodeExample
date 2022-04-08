@@ -18,7 +18,6 @@ const app = express();
 
 
 router.get("/youtube/callback", (req, res) => {
-    res.send('im the youtube page!');
     console.log('here', req.body, req.query, req.params, req.headers)
     let query = req.query
     if('hub.challenge' in query){
