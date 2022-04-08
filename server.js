@@ -18,18 +18,8 @@ const app = express();
 
 
 router.get("/youtube/callback", (req, res) => {
-    console.log('here', req.body, req.query, req.params, req.headers)
-    let query = req.query
-    if('hub.challenge' in query){
-        let channelID = query['hub.topic'].split('=').pop()
-        /*if(!bot.youtube.pendingVerify.has(channelID)) {
-            console.log('Invalid youtube hook sent to me', channelID, req.headers)
-            return res.sendStatus(401)
-        }*/
-        bot.youtube.lease.set(channelID, Date.now() + (query['hub.lease_seconds'] * 1000))
-        bot.youtube.pendingVerify.delete(channelID)
-        return res.status(202).send(query['hub.challenge'])
-    }
+    res.send('im the youtube page!');
+    
 })
 
 router.post('/youtube/callback', (req, res) => {
