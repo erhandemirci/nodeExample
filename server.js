@@ -15,13 +15,13 @@ const app = express();
     router.get('/about', function(req, res) {
         res.send('im the about page!');
     });
-app.get("/search", (req, res) => {
+router.get('/search', function(req, res) => {
     const searchQuery = req.query.search_query;
     res.send(searchQuery);
 }
 
 
-router.get("/youtube/callback", (req, res) => {
+router.get('/youtube/callback', (req, res) => {
     console.log('here', req.body, req.query, req.params, req.headers)
     let query = req.query
     if('hub.challenge' in query){
