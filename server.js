@@ -59,7 +59,7 @@ res.send(response.data);
     });
 
 
-router.get('/youtube/callback', (req, res) => {
+router.get('/youtube/callback', function(req, res){
     console.log('here', req.body, req.query, req.params, req.headers)
     let query = req.query
     if('hub.challenge' in query){
@@ -74,7 +74,7 @@ router.get('/youtube/callback', (req, res) => {
     }
 })
 
-router.post('/youtube/callback', (req, res) => {
+router.post('/youtube/callback', function(req, res){
     console.log('here post', req.body, req.query, req.params, req.headers)
 
     let hmac = generateHMAC(req.query['hub.challenge'], 'very_secret', "sha1")
