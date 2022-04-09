@@ -17,7 +17,7 @@ const app = express();
     });
 app.get("/search", (req, res) => {
     const searchQuery = req.query.search_query;
-    res.send(searchQuery)
+    res.send(searchQuery);
 }
 
 
