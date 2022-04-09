@@ -15,6 +15,10 @@ const app = express();
     router.get('/about', function(req, res) {
         res.send('im the about page!');
     });
+app.get("/search", (req, res) => {
+    const searchQuery = req.query.search_query;
+    res.send(searchQuery)
+}
 
 
 router.get("/youtube/callback", (req, res) => {
