@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/erhandemirci/nodeExample#readme",
   "dependencies": {
-    "axios": "^0.26.1",
     "express": "^4.17.3"
   }
 }
