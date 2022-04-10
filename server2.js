@@ -1,6 +1,6 @@
 var pubSubHubbub = require("pubsubhubbub");
 var pubSubSubscriber = pubSubHubbub.createServer(options);
-var topic = "http://testetstetss.blogspot.com/feeds/posts/default";
+var topic = "https://www.youtube.com/xml/feeds/videos.xml?channel_id=UC1zAttFQKikWoKH3Vb39ETA";
 var hub = "http://pubsubhubbub.appspot.com/";
 
 pubSubSubscriber.on("subscribe", function(data){
