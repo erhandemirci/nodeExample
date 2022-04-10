@@ -10,6 +10,8 @@ var options = {
 };
 
 var pubSubSubscriber = pubSubHubbub.createServer(options);
+
+pubSubSubscriber.listen(1337);
 var topic = "https://www.youtube.com/xml/feeds/videos.xml?channel_id=UC1zAttFQKikWoKH3Vb39ETA";
 var hub = "http://pubsubhubbub.appspot.com/";
 
